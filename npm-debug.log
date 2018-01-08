@@ -1,0 +1,149 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v6.11.2/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v6.11.2/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'bootstrap@latest',
+1 verbose cli   '@ng-bootstrap',
+1 verbose cli   'font-awesome' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData bootstrap@latest
+8 silly fetchPackageMetaData @ng-bootstrap
+9 silly fetchPackageMetaData font-awesome
+10 silly fetchNamedPackageData bootstrap
+11 silly mapToRegistry name bootstrap
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: 'bootstrap',
+14 silly mapToRegistry   scope: null,
+14 silly mapToRegistry   escapedName: 'bootstrap',
+14 silly mapToRegistry   name: 'bootstrap',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri https://registry.npmjs.org/bootstrap
+16 silly fetchOtherPackageData @ng-bootstrap
+17 silly cache add args [ '@ng-bootstrap', null ]
+18 verbose cache add spec @ng-bootstrap
+19 silly fetchNamedPackageData font-awesome
+20 silly mapToRegistry name font-awesome
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'font-awesome',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'font-awesome',
+23 silly mapToRegistry   name: 'font-awesome',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/font-awesome
+25 silly cache add parsed spec Result {
+25 silly cache add   raw: '@ng-bootstrap',
+25 silly cache add   scope: null,
+25 silly cache add   escapedName: null,
+25 silly cache add   name: null,
+25 silly cache add   rawSpec: '@ng-bootstrap',
+25 silly cache add   spec: '/home/ubuntu/workspace/@ng-bootstrap',
+25 silly cache add   type: 'local' }
+26 error addLocal Could not install /home/ubuntu/workspace/@ng-bootstrap
+27 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/home/ubuntu/workspace/@ng-bootstrap'
+27 silly fetchPackageMetaData     at Error (native)
+27 silly fetchPackageMetaData  error for @ng-bootstrap { Error: ENOENT: no such file or directory, open '/home/ubuntu/workspace/@ng-bootstrap'
+27 silly fetchPackageMetaData     at Error (native)
+27 silly fetchPackageMetaData   errno: -2,
+27 silly fetchPackageMetaData   code: 'ENOENT',
+27 silly fetchPackageMetaData   syscall: 'open',
+27 silly fetchPackageMetaData   path: '/home/ubuntu/workspace/@ng-bootstrap' }
+28 verbose request uri https://registry.npmjs.org/bootstrap
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 9:05:24 AM
+31 verbose request id adad8fbe3a279261
+32 verbose etag "5a4d0bd2-1293a"
+33 verbose lastModified Wed, 3 Jan 2018 16:58:58 GMT
+34 http request GET https://registry.npmjs.org/bootstrap
+35 verbose request uri https://registry.npmjs.org/font-awesome
+36 verbose request no auth needed
+37 info attempt registry request try #1 at 9:05:24 AM
+38 verbose etag "5a4e91e7-5956"
+39 verbose lastModified Thu, 4 Jan 2018 20:43:19 GMT
+40 http request GET https://registry.npmjs.org/font-awesome
+41 http 304 https://registry.npmjs.org/bootstrap
+42 verbose headers { date: 'Fri, 05 Jan 2018 09:05:24 GMT',
+42 verbose headers   via: '1.1 varnish',
+42 verbose headers   'cache-control': 'max-age=300',
+42 verbose headers   etag: '"5a4d0bd2-1293a"',
+42 verbose headers   age: '13228',
+42 verbose headers   connection: 'keep-alive',
+42 verbose headers   'x-served-by': 'cache-cdg8723-CDG',
+42 verbose headers   'x-cache': 'HIT',
+42 verbose headers   'x-cache-hits': '35',
+42 verbose headers   'x-timer': 'S1515143124.152564,VS0,VE0',
+42 verbose headers   vary: 'Accept-Encoding, Accept' }
+43 silly get cb [ 304,
+43 silly get   { date: 'Fri, 05 Jan 2018 09:05:24 GMT',
+43 silly get     via: '1.1 varnish',
+43 silly get     'cache-control': 'max-age=300',
+43 silly get     etag: '"5a4d0bd2-1293a"',
+43 silly get     age: '13228',
+43 silly get     connection: 'keep-alive',
+43 silly get     'x-served-by': 'cache-cdg8723-CDG',
+43 silly get     'x-cache': 'HIT',
+43 silly get     'x-cache-hits': '35',
+43 silly get     'x-timer': 'S1515143124.152564,VS0,VE0',
+43 silly get     vary: 'Accept-Encoding, Accept' } ]
+44 verbose etag https://registry.npmjs.org/bootstrap from cache
+45 verbose get saving bootstrap to /home/ubuntu/.npm/registry.npmjs.org/bootstrap/.cache.json
+46 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+47 http 304 https://registry.npmjs.org/font-awesome
+48 verbose headers { date: 'Fri, 05 Jan 2018 09:05:24 GMT',
+48 verbose headers   via: '1.1 varnish',
+48 verbose headers   'cache-control': 'max-age=300',
+48 verbose headers   etag: '"5a4e91e7-5956"',
+48 verbose headers   age: '912',
+48 verbose headers   connection: 'keep-alive',
+48 verbose headers   'x-served-by': 'cache-cdg8735-CDG',
+48 verbose headers   'x-cache': 'HIT',
+48 verbose headers   'x-cache-hits': '15',
+48 verbose headers   'x-timer': 'S1515143124.157896,VS0,VE0',
+48 verbose headers   vary: 'Accept-Encoding, Accept' }
+49 silly get cb [ 304,
+49 silly get   { date: 'Fri, 05 Jan 2018 09:05:24 GMT',
+49 silly get     via: '1.1 varnish',
+49 silly get     'cache-control': 'max-age=300',
+49 silly get     etag: '"5a4e91e7-5956"',
+49 silly get     age: '912',
+49 silly get     connection: 'keep-alive',
+49 silly get     'x-served-by': 'cache-cdg8735-CDG',
+49 silly get     'x-cache': 'HIT',
+49 silly get     'x-cache-hits': '15',
+49 silly get     'x-timer': 'S1515143124.157896,VS0,VE0',
+49 silly get     vary: 'Accept-Encoding, Accept' } ]
+50 verbose etag https://registry.npmjs.org/font-awesome from cache
+51 verbose get saving font-awesome to /home/ubuntu/.npm/registry.npmjs.org/font-awesome/.cache.json
+52 verbose correctMkdir /home/ubuntu/.npm correctMkdir already in flight; waiting
+53 silly rollbackFailedOptional Starting
+54 silly rollbackFailedOptional Finishing
+55 silly runTopLevelLifecycles Finishing
+56 silly install printInstalled
+57 verbose stack Error: ENOENT: no such file or directory, open '/home/ubuntu/workspace/@ng-bootstrap'
+57 verbose stack     at Error (native)
+58 verbose cwd /home/ubuntu/workspace
+59 error Linux 4.9.74-c9
+60 error argv "/home/ubuntu/.nvm/versions/node/v6.11.2/bin/node" "/home/ubuntu/.nvm/versions/node/v6.11.2/bin/npm" "install" "--save" "bootstrap@latest" "@ng-bootstrap" "font-awesome"
+61 error node v6.11.2
+62 error npm  v3.10.10
+63 error path /home/ubuntu/workspace/@ng-bootstrap
+64 error code ENOENT
+65 error errno -2
+66 error syscall open
+67 error enoent ENOENT: no such file or directory, open '/home/ubuntu/workspace/@ng-bootstrap'
+68 error enoent ENOENT: no such file or directory, open '/home/ubuntu/workspace/@ng-bootstrap'
+68 error enoent This is most likely not a problem with npm itself
+68 error enoent and is related to npm not being able to find a file.
+69 verbose exit [ -2, true ]
